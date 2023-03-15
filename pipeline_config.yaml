@@ -1,0 +1,23 @@
+model_name: tpg_test
+data_path: data/arrhythmia.data
+nan_threshold: 0.5
+min_feature_count: 30
+random_seed: 2023
+hp_tuning:
+  {
+    "numTrees":{
+      "start": 3, 
+      "stop": 50, 
+      "num": 5
+    }, 
+    "maxDepth": {
+      "start": 2, 
+      "stop": 10, 
+      "num": 2
+    }, 
+    "maxBins": {
+      "start": 3, 
+      "stop": 64, 
+      "num": 2
+    }
+  }
